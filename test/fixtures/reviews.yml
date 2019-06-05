@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  neighborhood: one
+  content: MyText
+  stars: 1
+
+two:
+  user: two
+  neighborhood: two
+  content: MyText
+  stars: 1

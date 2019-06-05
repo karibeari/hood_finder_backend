@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  age_range: MyString
+  income: MyString
+  school: MyString
+  population: MyString
+  zestimate: MyString
+  user: one
+
+two:
+  age_range: MyString
+  income: MyString
+  school: MyString
+  population: MyString
+  zestimate: MyString
+  user: two

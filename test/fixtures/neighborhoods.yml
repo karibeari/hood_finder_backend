@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  schools: 
+  school_score: 1.5
+  population: 1
+  average_age: 1
+  median_income: 1
+  zestimate: 1
+
+two:
+  schools: 
+  school_score: 1.5
+  population: 1
+  average_age: 1
+  median_income: 1
+  zestimate: 1
