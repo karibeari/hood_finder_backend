@@ -1,5 +1,8 @@
 class NeighborhoodsController < ApplicationController
   before_action :find_neighborhood, only: [:show]
+  #remove for login
+  skip_before_action :authenticate_request
+  
 
   def index
     @neighborhoods = Neighborhood.all

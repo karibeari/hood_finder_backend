@@ -10,20 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_11_223234) do
+ActiveRecord::Schema.define(version: 2019_06_17_224050) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "filters", force: :cascade do |t|
-    t.string "age_range"
-    t.string "income"
-    t.string "school"
-    t.string "population"
-    t.string "zestimate"
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "population_priority"
+    t.integer "over_65_priority"
+    t.integer "under_18_priority"
+    t.integer "zestimate_priority"
+    t.integer "percent_over_65_min"
+    t.integer "percent_over_65_max"
+    t.integer "percent_under_18_min"
+    t.integer "percent_under_18_max"
+    t.integer "population_min"
+    t.integer "population_max"
     t.index ["user_id"], name: "index_filters_on_user_id"
   end
 
@@ -52,6 +57,12 @@ ActiveRecord::Schema.define(version: 2019_06_11_223234) do
     t.integer "HU_RENTED"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.float "match_score"
+    t.float "MoM"
+    t.float "QoQ"
+    t.float "YoY"
+    t.float "five_year"
+    t.float "ten_year"
   end
 
   create_table "reviews", force: :cascade do |t|

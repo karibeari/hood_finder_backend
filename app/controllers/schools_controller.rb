@@ -1,5 +1,8 @@
 class SchoolsController < ApplicationController
   before_action :find_school, only: [:show]
+  #remove for login
+  skip_before_action :authenticate_request
+
 
   def index
     @schools = School.all

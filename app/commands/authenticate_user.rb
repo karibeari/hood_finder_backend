@@ -12,7 +12,7 @@ class AuthenticateUser
 
   private
 
-  attr_accessor :username, :password
+  attr_accessor :username, :password, :first_name, :last_name
 
   def user
     user = User.find_by username: username
